@@ -23,6 +23,10 @@ Recipe.init(
             type: DataTypes.TEXT,
             allowNull: true,
         },
+        total_time: {
+            type: DataTypes.INTEGER,
+            allowNull: false,
+        },
         image_url: {
             type: DataTypes.STRING,
             allowNull: true,
