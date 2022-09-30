@@ -1,0 +1,9 @@
+header {
+    background-image: url(/assets/images/board4.PNG);
+    font-size: 80px;
+    color: var(--white);
+    text-align: center;
+    height: 130px;
+    background-size: cover;
+    padding-top: 30px;
+}
