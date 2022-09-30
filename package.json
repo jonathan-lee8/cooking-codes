@@ -1,4 +1,22 @@
 {
+  "name": "cooking-codes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonathan-lee8/cooking-codes.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jonathan-lee8/cooking-codes/issues"
+  },
+  "homepage": "https://github.com/jonathan-lee8/cooking-codes#readme",
   "dependencies": {
     "connect-session-sequelize": "^7.1.5",
     "dotenv": "^16.0.3",
