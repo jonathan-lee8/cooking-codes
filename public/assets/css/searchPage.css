@@ -1,0 +1,36 @@
+:root{
+    --arefTitle: 'Aref Ruqaa Ink', serif;
+    --bitterText: 'Bitter', serif;
+
+}
+
+*{
+    font-family: var(--bitterText);
+}
+
+header {
+    background-image: url(/assets/images/board4.PNG);
+    font-size: 80px;
+    font-family: var(--arefTitle);
+    color: var(--white);
+    text-align: center;
+    height: 130px;
+    background-size: cover;
+    padding-top: 30px;
+    background-color: aquamarine;
+}
+
+h2{
+    margin: 40px;
+    font-size: 40px;
+}
+
+.main-container {
+
+}
+
+.input-container {
+    background-color:  rgba(239, 239, 240, 1);
+    margin: 10px;
+
+}
