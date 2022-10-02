@@ -34,3 +34,27 @@ h2{
     margin: 10px;
 
 }
+
+.input-container h3 {
+    margin: 30px;
+}
+
+.search-bar {
+    margin-bottom: 60px;
+}
+
+.recipe-container {
+    padding: 30px;
+}
+
+.recipes{
+max-width: 350px;
+background-color: rgba(239, 239, 240, 1);
+overflow: scroll;
+}
+
+.card-title {
+    background-color:  rgba(239, 239, 240, 1);
+    width: fit-content;
+    color: black;
+}
