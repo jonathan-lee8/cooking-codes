@@ -31,6 +31,13 @@ footer {
   color: var(--white);
   text-align: center;
 }
+textarea {
+  width: 180px;
+  height: 35px;
+  resize: none;
+  font-size: 20px;
+  margin: 5px;
+}
 .format {
   padding: 25px;
   display: flex;
@@ -54,4 +61,24 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+}
+.login-page {
+  display: flex;
+}
+.login-box {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sign-up {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
