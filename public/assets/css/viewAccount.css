@@ -1,0 +1,35 @@
+:root{
+    --arefTitle: 'Aref Ruqaa Ink', serif;
+    --bitterText: 'Bitter', serif;
+    --secondary: #6c757d;
+    --blue: #5c97bf;
+    --athensGray: rgba(239, 239, 240, 1);
+    --pearlblush: #ede7e1;
+}
+
+body {
+    background-color: ghostwhite;
+}
+
+*{
+    font-family: var(--bitterText);
+    margin:0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+header {
+    background-image: url(/public/assets/images/anshu-a--7LeAsLS0FA-unsplash\ \(4\).jpg);
+    font-size: 80px;
+    font-family: var(--arefTitle);
+    color: var(--athensGray);
+    text-shadow: -1px 1px 2px #000,
+                1px 1px 2px #000,
+                1px -1px 0 #000,
+                -1px -1px 0 #000;
+    text-align: center;
+    height: 150px;
+    background-size: cover;
+    padding-top: 30px;
+    background-color: aquamarine;
+}
