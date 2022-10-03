@@ -5,6 +5,8 @@
     --blue: #5c97bf;
     --athensGray: rgba(239, 239, 240, 1);
     --pearlblush: #ede7e1;
+    --container-border: 4px solid #dbd7d3;
+    --header-border: 20px solid var(--pearlblush);
 }
 
 body {
@@ -28,10 +30,11 @@ header {
                 1px -1px 0 #000,
                 -1px -1px 0 #000;
     text-align: center;
-    height: 150px;
+    height: 170px;
     background-size: cover;
     padding-top: 30px;
-    background-color: aquamarine;
+    background-color: var(--pearlblush);
+    border-bottom: var(--header-border);
 }
 
 h2{
@@ -44,7 +47,7 @@ h2{
     margin: 10px;
     max-height: 1000px;
     margin-bottom: 350px;
-    border: 4px solid #dbd7d3;
+    border: var(--container-border);
 }
 
 .input-container h3 {
@@ -81,7 +84,7 @@ h2{
     background-color: var(--pearlblush);
     margin-bottom: 200px;
     max-height: 1000px;
-    border: 4px solid #dbd7d3;
+    border: var(--container-border);
 }
 
 /* scrollbar */

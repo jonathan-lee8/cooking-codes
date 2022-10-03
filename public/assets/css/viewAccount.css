@@ -5,6 +5,8 @@
     --blue: #5c97bf;
     --athensGray: rgba(239, 239, 240, 1);
     --pearlblush: #ede7e1;
+    --container-border: 4px solid #dbd7d3;
+    --header-border: 20px solid var(--pearlblush);
 }
 
 body {
@@ -32,7 +34,7 @@ header {
     background-size: cover;
     padding-top: 30px;
     background-color: var(--pearlblush);
-    border-bottom:  20px solid var(--pearlblush);
+    border-bottom:  var(--header-border);
 }
 
 /* -----------ACCOUNT DETAILS/RECIPES-------------- */
@@ -47,12 +49,12 @@ header {
     margin-bottom: 50px;
     padding: 30px;
     background-color: var(--pearlblush);
-    border: 4px solid #dbd7d3;
+    border: var(--container-border);
 }
 
 .view-username,
 .view-email {
-    background-color: var(--athensGray);
+    background-color: #e4ddd7;
 }
 
 /* -----------USER RECIPES------------ */
@@ -61,7 +63,7 @@ header {
     background-color: var(--pearlblush);
     margin-bottom: 200px;
     max-height: 1000px;
-    border: 4px solid #dbd7d3;
+    border: var(--container-border);
 }
 
 /* scrollbar */
