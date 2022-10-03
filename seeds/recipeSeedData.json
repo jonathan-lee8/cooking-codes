@@ -4,27 +4,31 @@
         "instructions": "Preheat oven to 350 degrees F (175 degrees C). Grease and flour an 8-inch square pan.In a large saucepan, melt 1/2 cup butter. Remove from heat, and stir in sugar, eggs, and 1 teaspoon vanilla. Beat in 1/3 cup cocoa, 1/2 cup flour, salt, and baking powder. Spread batter into prepared pan. Bake in preheated oven for 25 to 30 minutes. Do not overcook. Remove brownies from the oven, and make frosting. Combine 3 tablespoons softened butter, 3 tablespoons cocoa, honey, 1 teaspoon vanilla extract, and 1 cup confectioners' sugar. Stir until smooth.Frost brownies while they are still warm.",
         "ingredients": "1/2 cup butter, 1 cup white sugar, 2 eggs, 1 teaspoon vanilla extract, 1/3 cup unsweetened cocoa powder, 1/2 cup all-purpose flour, 1/4 teapoon salt, 1/4 teaspoon baking powder",
         "total_time": 15,
-        "image_url": "https://www.allrecipes.com/thmb/AjcMWxVVMd_APpsG3w1Eu2kVD9I=/2250x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/10549-Best-brownies-mfs_003-5d1f8c72b335417d80d5582559a121e3.jpg"
+        "image_url": "https://www.allrecipes.com/thmb/AjcMWxVVMd_APpsG3w1Eu2kVD9I=/2250x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/10549-Best-brownies-mfs_003-5d1f8c72b335417d80d5582559a121e3.jpg",
+        "course_name": "Dessert"
     },
     {
         "name": "The Best Swedish Meatballs",
         "instructions": "In a medium sized bowl combine ground beef, panko, parsley, allspice, nutmeg, onion, garlic powder, pepper, salt and egg. Mix until combined. Roll into 12 large meatballs or 20 small meatballs. In a large skillet heat olive oil and 1 Tablespoon butter. Add the meatballs and cook turning continuously until brown on each side and cooked throughout. Transfer to a plate and cover with foil. Add 4 Tablespoons butter and flour to skillet and whisk until it turns brown. Slowly stir in beef broth and heavy cream. Add worchestershire sauce and dijon mustard and bring to a simmer until sauce starts to thicken. Salt and pepper to taste. Add the meatballs back to the skillet and simmer for another 1-2 minutes. Serve over egg noodles or rice.",
         "ingredients": "1 pound ground beef, 1/4 cup panko bread crumbs, 1 tablespoon parsley chopped, 1/4 teaspoon ground allspice, 1/4 teaspoon ground nutmeg, ¼ cup onion finely chopped, ½ teaspoon Garlic Powder, ⅛ teaspoon Pepper, ½ teaspoon salt, 1 egg, 1 tbsp. olive oil, 5 tbsp. butter, 3 tbsp. flour, 2 cups beef broth, 1 cup heavy cream, 1 Tablespoon Worcestershire sauce, 1 tsp. Dijon mustard, salt and pepper to taste",
         "total_time": 45,
-        "image_url": "https://therecipecritic.com/wp-content/uploads/2016/08/swedishmeatballs33-650x975.jpg"
+        "image_url": "https://therecipecritic.com/wp-content/uploads/2016/08/swedishmeatballs33-650x975.jpg",
+        "course_name": "Main Course"
     },
     {
         "name": "Teriyaki Meatballs",
         "instructions": "Preheat oven to 400°. Drain pineapple, reserving 1/4 cup juice; set pineapple aside. In a bowl, combine onion, peppers, bread crumbs, ginger, salt and reserved pineapple juice. Crumble beef over mixture and mix well. Shape into 1-in. balls. Place 6 sauce ingredients in a blender; cover and process 1 minute. Place 2 tablespoons sauce in a greased 13x9-in. baking dish. Add meatballs. Pour remaining sauce over meatballs. Bake, uncovered, until meat is no longer pink, 18-20 minutes. Place 1 pineapple chunk on each meatball; secure with a toothpick. If desired, garnish with green onions.",
         "ingredients": "2 cans (8 ounces each) pineapple chunks, 1 medium onion, finely chopped, 1/4 cup finely chopped sweet yellow pepper, 1/4 cup finely chopped sweet red pepper, 1/2 cup dry bread crumbs, 1/2 teaspoon ground ginger, 1/4 teaspoon salt, 1 pound lean ground beef",
         "total_time": 40,
-        "image_url": "https://www.tasteofhome.com/wp-content/uploads/2018/01/Teriyaki-Meatballs_EXPS_FT21_13380_F_1119_1-11.jpg?fit=700,1024"
+        "image_url": "https://www.tasteofhome.com/wp-content/uploads/2018/01/Teriyaki-Meatballs_EXPS_FT21_13380_F_1119_1-11.jpg?fit=700,1024",
+        "course_name": "Appetizer"
     },
     {
         "name": "Good Old Fashion Pancakes",
         "instructions": "In a large bowl, sift together the flour, baking powder, salt and sugar. Make a well in the center and pour in the milk, egg and melted butter; mix until smooth. Heat a lightly oiled griddle or frying pan over medium-high heat. Pour or scoop the batter onto the griddle, using approximately 1/4 cup for each pancake. Brown on both sides and serve hot.",
         "ingredients": "1 ½ cups all-purpose flour, 3 ½ teaspoons baking powder, ¼ teaspoon salt, or more to taste, 1 tablespoon white sugar, 1 ¼ cups milk, 1 egg, 3 tablespoons butter, melted",
         "total_time": 20,
-        "image_url": "https://www.allrecipes.com/thmb/FtSGWHItBfgqevxkHL1aGs83hx8=/2250x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/21014-Good-old-Fashioned-Pancakes-mfs_002-0e249c95678f446291ebc9408ae64c05.jpg"
+        "image_url": "https://www.allrecipes.com/thmb/FtSGWHItBfgqevxkHL1aGs83hx8=/2250x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/21014-Good-old-Fashioned-Pancakes-mfs_002-0e249c95678f446291ebc9408ae64c05.jpg",
+        "course_name": "Breakfast"
     }
 ]
