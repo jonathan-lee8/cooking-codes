@@ -31,17 +31,14 @@ Recipe.init(
             type: DataTypes.STRING,
             allowNull: true,
         },
-        course_id: {
-            type: DataTypes.INTEGER,
-            references: {
-                model: 'course',
-                key: 'id',
-            },
+        course_name: {
+            type: DataTypes.STRING,
+            allowNull: false,
         },
-        author_id: {
+        user_id: {
             type: DataTypes.INTEGER,
             references: {
-                model: 'author',
+                model: 'user',
                 key: 'id',
             },
         },
