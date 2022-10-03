@@ -12,7 +12,7 @@ const seedDatabase = async () => {
     for(const recipe of recipeSeedData) {
         const newRecipe = await Recipe.create({
             ...recipe,
-            user_id: users[Math.floor(Math.random() * users.length)].isSoftDeleted,
+            user_id: users[Math.floor(Math.random() * users.length)].id,
         });
     }
 
