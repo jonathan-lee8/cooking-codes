@@ -4,7 +4,6 @@
   --white: #ffffff;
   --heliotrope: #e866ec;
 }
-/* set content highlight color and background */
 ::selection {
   background-color: transparent;
   color: var(--white);
@@ -27,7 +26,6 @@ header {
 h2 {
   padding: 10px;
 }
-
 footer {
   position:fixed;bottom:0;left:0;right:0;height:30px;
   height: 60px;
