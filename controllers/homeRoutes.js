@@ -1,6 +1,5 @@
 const router = require('express').Router();
 const { User, Recipe } = require('../models');
-const withAuth = require('../utils/auth');
 
 //Get all recipes for the homepage
 router.get('/recipes', async (req, res) => {
@@ -15,7 +14,8 @@ router.get('/recipes', async (req, res) => {
       res.json(err);
     });
     const recipes = recipeData.map((recipe) => recipe.get({ plain: true }));
-    res.render('all', { recipes });
+    res.json(recipes);
+    //res.render('all', { recipes });
 });
 
 //Get a single recipe route
@@ -60,3 +60,5 @@ router.get('/users/:id', async (req,res) => {
         res.status(500).json(err);
     }
 });
+
+module.exports = router;
