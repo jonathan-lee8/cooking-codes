@@ -7,17 +7,30 @@
     --pearlblush: #ede7e1;
 }
 
-*{
-    font-family: var(--bitterText);
+body {
+    background-color: ghostwhite;
 }
 
+*{
+    font-family: var(--bitterText);
+    margin:0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+
 header {
-    background-image: url(/assets/images/board4.PNG);
+    background-image: url(/public/assets/images/anshu-a--7LeAsLS0FA-unsplash\ \(4\).jpg);
     font-size: 80px;
     font-family: var(--arefTitle);
-    color: var(--white);
+    color: var(--athensGray);
+    text-shadow: -1px 1px 2px #000,
+                1px 1px 2px #000,
+                1px -1px 0 #000,
+                -1px -1px 0 #000;
     text-align: center;
-    height: 130px;
+    height: 150px;
     background-size: cover;
     padding-top: 30px;
     background-color: aquamarine;
@@ -31,7 +44,9 @@ h2{
 .input-container {
     background-color: #ede7e1;
     margin: 10px;
-
+    max-height: 1000px;
+    margin-bottom: 350px;
+    border: 4px solid #dbd7d3;
 }
 
 .input-container h3 {
@@ -44,8 +59,9 @@ h2{
 
 .search-btn {
     background-color: var(--blue);
-    color: black;
+    color: #3b2d2d;
     font-weight: 600;
+    overflow: visible;
 }
 
 .course-btns {
@@ -58,19 +74,39 @@ h2{
 .courses {
     background-color: var(--blue);
     border: 1px solid var(--secondary);
-    color: black;
+    color: #3b2d2d;
     font-weight: 600;
 }
 
 .recipe-container {
     padding: 30px;
     background-color: var(--pearlblush);
+    margin-bottom: 200px;
+    max-height: 1000px;
+    border: 4px solid #dbd7d3;
 }
 
-.recipes{
-    max-width: 350px;
+/* scrollbar */
+section {
     overflow: scroll;
 }
+
+section::-webkit-scrollbar {
+    width: 7px;
+}
+
+section::-webkit-scrollbar-track {
+    background: #d4d2d0; 
+}
+
+section::-webkit-scrollbar-thumb {
+    background: #a09c99; 
+}
+
+section::-webkit-scrollbar-thumb:hover {
+    background: #726c67; 
+}
+
 
 .card {
     background-color: var(--athensGray);
@@ -81,7 +117,6 @@ h2{
     padding: 3px;
     width: fit-content;
     color: black;
-    background-size: cover;
 }
 
 .card-title:hover {
