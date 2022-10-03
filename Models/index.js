@@ -10,4 +10,4 @@ User.hasMany(Recipe, {
     onDelete: 'CASCADE',
 });
 
-module.exports = { Recipe, Course, User};
+module.exports = { Recipe, User};
