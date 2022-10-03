@@ -1,5 +1,4 @@
 const router = require('express').Router();
-const { Author, User } = require('../models');
 const { Course, User } = require('../models');
 const { Recipe, User } = require('../models');
 const withAuth = require('../utils/auth');
