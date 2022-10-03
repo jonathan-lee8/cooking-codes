@@ -1,76 +1,33 @@
 const router = require('express').Router();
-const { Recipe } = require('../../models');
+const Recipe = require('../../Models/Recipe');
 
-//Get all recipes route
-router.get('/', async (req, res) => {
-  try {
-    const dbRecipeData = await Recipe.findAll({
-      include: [
-        {
-          model: Recipe,
-          attributes: ['course_name', 'ingredients'],
-        },
-      ],
-    });
-
-    const recipes = dbRecipeData.map((Recipe) =>
-      Recipe.get({ plain: true })
-    );
-
-    res.render('homepage', {
-      recipes,
-    });
-  } catch (err) {
-    console.log(err);
-    res.status(500).json(err);
-  }
-});
-
-//Get a single recipe route
-router.get('/recipe/:id', async (req, res) => {
-  try {
-    const dbRecipeData = await Recipe.findByPk(req.params.id);
-
-    const Recipe = dbRecipeData.get({ plain: true });
-
-    res.render('Recipe', { Recipe });
-  } catch (err) {
-    console.log(err);
-    res.status(500).json(err);
-  }
-});
-
-router.post('/', async (req, res) => {
-  try {
-    const newRecipe = await Recipe.create({
-      ...req.body,
-      user_id: req.session.user_id,
-    });
-
-    res.status(200).json(newRecipe);
-  } catch (err) {
-    res.status(400).json(err);
-  }
-});
-
-router.delete('/:id', async (req, res) => {
-  try {
-    const RecipeData = await Recipe.destroy({
-      where: {
-        id: req.params.id,
-        user_id: req.session.user_id,
-      },
-    });
-
-    if (!RecipeData) {
-      res.status(404).json({ message: 'No project found with this id!' });
-      return;
+router.post('/', async (req,res) => {
+    try {
+        const dbRecipeData = await Recipe.create({
+            name: req.body.name,
+            instructions: req.body.instructions,
+            ingredients: req.body.ingredients,
+            total_time: req.body.total_time,
+            image_url: req.body.image_url,
+            course_name: req.body.course_name,
+            user_id: req.session.user_id, //Need to save user id in session and get it from there to add to recipe.
+        });
+        res.status(200).json(dbRecipeData);
+    } catch (err) {
+        res.status(500).json(err);
     }
+});
 
-    res.status(200).json(RecipeData);
-  } catch (err) {
-    res.status(500).json(err);
-  }
+router.delete('/:id', (req,res) => {
+    Recipe.destroy({
+        where: {
+            id: req.params.id,
+        },
+    })
+      .then((deletedRecipe) => {
+        res.json(deletedRecipe);
+      })
+      .catch((err) => res.json(err));
 });
 
 module.exports = router;

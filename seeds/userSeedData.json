@@ -1,0 +1,37 @@
+[
+    {
+        "username": "Susan James",
+        "email": "sjones@gmail.com",
+        "password": "sjones"
+    },
+    {
+        "username": "Steve Jones",
+        "email": "stevejones@gmail.com",
+        "password": "stevejones"
+    },
+    {
+        "username": "John Connors",
+        "email": "jconnors@gmail.com",
+        "password": "jconnors"
+    },
+    {
+        "username": "Adrian Ball",
+        "email": "aball@gmail.com",
+        "password": "aball"
+    },
+    {
+        "username": "Mark Browne",
+        "email": "mbrowne@gmail.com",
+        "password": "mbrowne"
+    },
+    {
+        "username": "June Smith",
+        "email": "jsmith@gmail.com",
+        "password": "jsmith"
+    },
+    {
+        "username": "Jane Smart",
+        "email": "jsmart@gmail.com",
+        "password": "jsmart"
+    }
+]

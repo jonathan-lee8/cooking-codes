@@ -1,41 +1,64 @@
 const router = require('express').Router();
-const { Course, User } = require('../models');
-const { Recipe, User } = require('../models');
-const withAuth = require('../utils/auth');
+const { User, Recipe } = require('../models');
 
-router.get('/', async (req, res) => {
-  try {
-    // Get all projects and JOIN with user data
-    const AuthorData = await Author.findAll({
-      include: [
-        {
-          model: User,
-          attributes: ['name'],
-        },
-      ],
+//Get all recipes for the homepage
+router.get('/recipes', async (req, res) => {
+    const recipeData = await Recipe.findAll({
+        include: [
+            {
+                model: User,
+                attributes: ['username'],
+            },
+        ],
+    }).catch((err) => { 
+      res.json(err);
     });
-
-    // Serialize data so the template can read it
-    const authors = AuthorData.map((author) => author.get({ plain: true }));
-
-    // Pass serialized data and session flag into template
-    res.render('homepage', { 
-      authors, 
-      logged_in: req.session.logged_in 
-    });
-  } catch (err) {
-    res.status(500).json(err);
-  }
+    const recipes = recipeData.map((recipe) => recipe.get({ plain: true }));
+    res.json(recipes);
+    //res.render('all', { recipes });
 });
 
-router.get('/login', (req, res) => {
-  // If the user is already logged in, redirect the request to another route
-  if (req.session.logged_in) {
-    res.redirect('/profile');
-    return;
-  }
+//Get a single recipe route
+router.get('/recipes/:id', async (req, res) => {
+    try {
+    const recipeData = await Recipe.findByPk(req.params.id, {
+        include: [
+            {
+                model: User,
+                attributes: ['username'],
+            },
+        ],
+    });
+    console.log(recipeData);
+    const recipe = recipeData.get({ plain: true });
+    res.render('recipe', recipe);
+    } catch (err) {
+        res.status(500).json(err);
+    }
+});
 
-  res.render('login');
+//Get specific user data
+router.get('/users/:id', async (req,res) => {
+    try {
+        const userData = await User.findByPk(req.params.id, {
+            include: [
+                {
+                    model: Recipe,
+                    attributes: [
+                        'id',
+                        'name',
+                        'total_time',
+                        'image_url',
+                    ],
+                },
+            ],
+        });
+        console.log(userData);
+        const user = userData.get({plain:true});
+        res.render('user', {user, loggedIn: req.session.loggedIn});
+    } catch (err) {
+        res.status(500).json(err);
+    }
 });
 
 module.exports = router;
