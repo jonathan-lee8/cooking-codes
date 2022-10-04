@@ -34,7 +34,11 @@ header {
     background-size: cover;
     padding-top: 30px;
     background-color: var(--pearlblush);
-    border-bottom: var(--header-border);
+}
+
+.navbar {
+    background-color: #9c816be1;
+    margin-bottom: 100px;
 }
 
 h2 {
