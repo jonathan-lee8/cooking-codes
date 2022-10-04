@@ -18,3 +18,5 @@ recipeScraper("https://www.epicurious.com/recipes/food/views/marjolaine-cake-rec
   res.status(200).json(recipeScraper);
   })
   .catch((err) => res.json(err))};
+
+  someAsyncFunc();
