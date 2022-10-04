@@ -2,9 +2,7 @@
   --brown: #3b1a07;
   --pastelGreen: #3c8842;
   --white: #ffffff;
-  --heliotrope: #e866ec;
 }
-/* set content highlight color and background */
 ::selection {
   background-color: transparent;
   color: var(--white);
@@ -27,7 +25,6 @@ header {
 h2 {
   padding: 10px;
 }
-
 footer {
   position:fixed;bottom:0;left:0;right:0;height:30px;
   height: 60px;
@@ -59,7 +56,7 @@ margin: 10px;
   justify-content: space-between;
   height: 700px;
 }
-.green {
+.box-1 {
   display: flex;
   background-color: gray;
   width: 20%;
@@ -68,7 +65,7 @@ margin: 10px;
   justify-content: space-between;
   text-align: center;
 }
-.black {
+.box-2 {
   display: flex;
   background-color: gray;
   width: 80%;
