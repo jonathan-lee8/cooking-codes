@@ -6,7 +6,9 @@
     --athensGray: rgba(239, 239, 240, 1);
     --pearlblush: #ede7e1;
     --container-border: 4px solid #dbd7d3;
-    --header-border: 20px solid var(--pearlblush);
+    --white: #ffffff;
+    --brown: #3b1a07;
+    --navBrown: #9c816be1;
 }
 
 body {
@@ -37,7 +39,7 @@ header {
 }
 
 .navbar {
-    background-color: #9c816be1;
+    background-color: var(--navBrown);
 }
 
 .welcome {
@@ -74,7 +76,7 @@ header {
     border: var(--container-border);
 }
 
-/* scrollbar */
+/* ---------SCROLLBAR CSS---------------- */
 section {
     overflow: scroll;
 }
@@ -95,6 +97,7 @@ section::-webkit-scrollbar-thumb:hover {
     background: #726c67;
 }
 
+/* ------------RECIPE CARDS--------------------- */
 .recipes {
     padding: 0;
 }
@@ -108,4 +111,14 @@ section::-webkit-scrollbar-thumb:hover {
 
 .card-title:hover {
     background-color: #f4ede4;
+}
+
+/* ------------------FOOTER---------------------- */
+footer {
+    position: relative;
+    bottom:0;left:0;right:0;height:30px;
+    height: 60px;
+    background-color: var(--navBrown);
+    color: var(--white);
+    text-align: center;
 }
