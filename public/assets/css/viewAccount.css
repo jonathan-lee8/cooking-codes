@@ -1,4 +1,4 @@
-:root{
+:root {
     --arefTitle: 'Aref Ruqaa Ink', serif;
     --bitterText: 'Bitter', serif;
     --secondary: #6c757d;
@@ -13,9 +13,9 @@ body {
     background-color: ghostwhite;
 }
 
-*{
+* {
     font-family: var(--bitterText);
-    margin:0;
+    margin: 0;
     padding: 0%;
     box-sizing: border-box;
 }
@@ -26,15 +26,15 @@ header {
     font-family: var(--arefTitle);
     color: var(--athensGray);
     text-shadow: -1px 1px 2px #000,
-                1px 1px 2px #000,
-                1px -1px 0 #000,
-                -1px -1px 0 #000;
+        1px 1px 2px #000,
+        1px -1px 0 #000,
+        -1px -1px 0 #000;
     text-align: center;
     height: 170px;
     background-size: cover;
     padding-top: 30px;
     background-color: var(--pearlblush);
-    border-bottom:  var(--header-border);
+    border-bottom: var(--header-border);
 }
 
 /* -----------ACCOUNT DETAILS/RECIPES-------------- */
@@ -76,15 +76,15 @@ section::-webkit-scrollbar {
 }
 
 section::-webkit-scrollbar-track {
-    background: #d4d2d0; 
+    background: #d4d2d0;
 }
 
 section::-webkit-scrollbar-thumb {
-    background: #a09c99; 
+    background: #a09c99;
 }
 
 section::-webkit-scrollbar-thumb:hover {
-    background: #726c67; 
+    background: #726c67;
 }
 
 
