@@ -11,7 +11,7 @@ router.get('/recipes', async (req, res) => {
             },
         ],
     }).catch((err) => { 
-      res.json(err);
+        res.json(err);
     });
     const recipes = recipeData.map((recipe) => recipe.get({ plain: true }));
     res.json(recipes);

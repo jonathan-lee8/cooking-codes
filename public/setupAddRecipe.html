@@ -58,24 +58,13 @@
         <!-- -------------CONTAINER FOR COOK TIME & SERVINGS AMOUNT---------------- -->
         <div class="cook-serve row mb-3">
             <div class="input-group mb-3 col-6">
-                <label class="input-group-text" for="inputGroupSelect01"> Cook Time: </label>
-                <select class="form-select" id="inputGroupSelect01">
-                    <option selected>Choose...</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                </select>
+                <span class="input-label input-group-text">Cook Time:</span>
+            <textarea class="form-control" aria-label="With textarea" style="height: 40px;"></textarea>
             </div>
-            <div class="input-group mb-3 col">
-                <span class="input-group-text" id="inputGroup-sizing-default">Serves:</span>
-                <input type="text" class="form-control" aria-label="Sizing example input"
-                    aria-describedby="inputGroup-sizing-default">
+            <div class="input-group mb-3 col-6">
+                <label class="input-label input-group-text" for="inputGroupFile01">Add Photo</label>
+                <input type="file" class="form-control" id="inputGroupFile01" accept="image/*">
             </div>
-        </div>
-
-        <div class="input-group mb-3">
-            <label class="input-label input-group-text" for="inputGroupFile01">Add Photo</label>
-            <input type="file" class="form-control" id="inputGroupFile01" accept="image/*">
         </div>
 
         <!-- ------------------CHECKS FOR DIET OPTIONS----------------- -->
