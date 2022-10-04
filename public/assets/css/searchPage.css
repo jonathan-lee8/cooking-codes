@@ -1,0 +1,120 @@
+:root {
+    --arefTitle: 'Aref Ruqaa Ink', serif;
+    --bitterText: 'Bitter', serif;
+    --secondary: #6c757d;
+    --blue: #5c97bf;
+    --athensGray: rgba(239, 239, 240, 1);
+    --pearlblush: #ede7e1;
+    --container-border: 4px solid #dbd7d3;
+    --header-border: 20px solid var(--pearlblush);
+}
+
+body {
+    background-color: ghostwhite;
+}
+
+* {
+    font-family: var(--bitterText);
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+header {
+    background-image: url(/public/assets/images/anshu-a--7LeAsLS0FA-unsplash\ \(4\).jpg);
+    font-size: 80px;
+    font-family: var(--arefTitle);
+    color: var(--athensGray);
+    text-shadow: -1px 1px 2px #000,
+        1px 1px 2px #000,
+        1px -1px 0 #000,
+        -1px -1px 0 #000;
+    text-align: center;
+    height: 170px;
+    background-size: cover;
+    padding-top: 30px;
+    background-color: var(--pearlblush);
+    border-bottom: var(--header-border);
+}
+
+h2 {
+    margin: 40px;
+    font-size: 40px;
+}
+
+.input-container {
+    background-color: #ede7e1;
+    margin: 10px;
+    max-height: 1000px;
+    margin-bottom: 350px;
+    border: var(--container-border);
+}
+
+.input-container h3 {
+    margin: 30px;
+}
+
+.search-bar {
+    margin-bottom: 60px;
+}
+
+.search-btn {
+    background-color: var(--blue);
+    color: #3b2d2d;
+    font-weight: 600;
+    overflow: visible;
+}
+
+.course-btns {
+    max-width: 60%;
+    display: flex;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.courses {
+    background-color: var(--blue);
+    border: 1px solid var(--secondary);
+    color: #3b2d2d;
+    font-weight: 600;
+}
+
+.recipe-container {
+    padding: 30px;
+    background-color: var(--pearlblush);
+    margin-bottom: 200px;
+    max-height: 1000px;
+    border: var(--container-border);
+}
+
+/* scrollbar */
+section {
+    overflow: scroll;
+}
+
+section::-webkit-scrollbar {
+    width: 7px;
+}
+
+section::-webkit-scrollbar-track {
+    background: #d4d2d0;
+}
+
+section::-webkit-scrollbar-thumb {
+    background: #a09c99;
+}
+
+section::-webkit-scrollbar-thumb:hover {
+    background: #726c67;
+}
+
+.card-title {
+    background-color: #f3f1ef;
+    padding: 3px;
+    width: fit-content;
+    color: black;
+}
+
+.card-title:hover {
+    background-color: #f4ede4;
+}
