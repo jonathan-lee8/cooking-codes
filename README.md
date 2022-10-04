@@ -6,7 +6,7 @@ Cooking codes was developed to have an application where users can share their b
 
 Please visit either links below to the Github repo or the deployed site. User can visit the Github link below and copy the SSH or HTTP key and clone the repo in their terminal portal. Once cloned, user can view the code implemented to see how code is functioning.
 
-Github: https://github.com/jonathan-lee8/cooking-codes
+Github: https://github.com/jonathan-lee8/cooking-codes \
 Deployed: 
 
 ## Usage
@@ -15,22 +15,22 @@ User can navigate to the deployed link above and explore the home page. Once rea
 
 ## Languages
 
-JavaScript
-HTML
-CSS
-Node
-Express
-Bootstrap
-Handlebars
-MySQL
-DotENV
+JavaScript \
+HTML \
+CSS \
+Node \
+Express \
+Bootstrap \
+Handlebars \
+MySQL \
+DotENV \
 Sequelize
 
 ## Credits
 
-Christopher Wendland (cwendland)
-Gabriel Arredondo (BreadDino)
-Martha Adame (mladame)
+Christopher Wendland (cwendland) \
+Gabriel Arredondo (BreadDino) \
+Martha Adame (mladame) \
 Jonathan Lee (jonathan-lee8)
 
 ## License
