@@ -2,10 +2,11 @@
   --brown: #3b1a07;
   --pastelGreen: #3c8842;
   --white: #ffffff;
+  --lightbrown: #6d5131;
 }
 ::selection {
   background-color: transparent;
-  color: var(--white);
+  color: var(--pastelGreen);
 }
 * {
   padding: 0;
@@ -14,7 +15,7 @@
   font-family: "Aref Ruqaa Ink", "Courier New", Courier, monospace;
 }
 header {
-  background-image: url(/assets/images/board4.PNG);
+  background-image: url(/public/assets/images/anshu-a--7LeAsLS0FA-unsplash\ \(4\).jpg);
   font-size: 80px;
   color: var(--white);
   text-align: center;
@@ -58,7 +59,7 @@ margin: 10px;
 }
 .box-1 {
   display: flex;
-  background-color: gray;
+  background-color: var(--lightbrown);
   width: 20%;
   margin: 5px;
   flex-direction: column;
@@ -67,7 +68,7 @@ margin: 10px;
 }
 .box-2 {
   display: flex;
-  background-color: gray;
+  background-color: var(--lightbrown);
   width: 80%;
   margin: 5px;
   flex-direction: column;
@@ -80,22 +81,22 @@ margin: 10px;
   justify-content: space-around;
 }
 .login-box {
-  width: 30%;
+  width: 25%;
   height: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: rgba(75, 36, 0, 0.8);
+  background: var(--lightbrown);
   border-radius: 1%;
 }
 .sign-up {
-  width: 30%;
+  width: 25%;
   height: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: rgba(75, 36, 0, 0.8);
-  border-radius: 1%;
+  background: var(--lightbrown);
+  border-radius: 5px;
 }
 .center {
   display: flex;
