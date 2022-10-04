@@ -102,11 +102,15 @@ section::-webkit-scrollbar-thumb:hover {
     padding: 0;
 }
 
-.card-title {
+.recipe-title {
     background-color: #f3f1ef;
     padding: 3px;
     width: fit-content;
     color: black;
+}
+
+.recipe-list {
+
 }
 
 .card-title:hover {
