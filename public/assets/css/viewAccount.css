@@ -21,7 +21,7 @@ body {
 }
 
 header {
-    background-image: url(/public/assets/images/board4.PNG);
+    background-image: url(/public/assets/images/anshu-a--7LeAsLS0FA-unsplash\ \(4\).jpg);
     font-size: 80px;
     font-family: var(--arefTitle);
     color: var(--athensGray);
@@ -34,7 +34,15 @@ header {
     background-size: cover;
     padding-top: 30px;
     background-color: var(--pearlblush);
-    border-bottom: var(--header-border);
+}
+
+.navbar {
+    background-color: #9c816be1;
+}
+
+.welcome {
+    margin: 50px;
+    font-size: 40px;
 }
 
 /* -----------ACCOUNT DETAILS/RECIPES-------------- */
@@ -86,7 +94,6 @@ section::-webkit-scrollbar-thumb {
 section::-webkit-scrollbar-thumb:hover {
     background: #726c67;
 }
-
 
 .recipes {
     padding: 0;
