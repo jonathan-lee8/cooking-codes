@@ -7,6 +7,9 @@
     --pearlblush: #ede7e1;
     --container-border: 4px solid #dbd7d3;
     --header-border: 20px solid var(--pearlblush);
+    --white: #ffffff;
+    --brown: #3b1a07;
+    --navBrown: #9c816be1;
 }
 
 body {
@@ -34,9 +37,13 @@ header {
     background-size: cover;
     padding-top: 30px;
     background-color: var(--pearlblush);
-    border-bottom: var(--header-border);
 }
 
+.navbar {
+    background-color: var(--navBrown);
+}
+
+/* ---------------FORM--------------------------- */
 .form-container {
     max-width: 80%;
     display: flexbox;
@@ -45,14 +52,8 @@ header {
     padding: 30px;
     background-color: var(--pearlblush);
     border: var(--container-border);
+    margin-bottom: 200px;
 }
-
-/* .input-label {
-    background-color: var(--blue);
-    border: 1px solid var(--secondary);
-    color: #3b2d2d;
-    font-weight: 600;
-} */
 
 .add-recipe-btn {
     height: 50px;
@@ -61,4 +62,14 @@ header {
     color: #3b2d2d;
     font-weight: 600;
     margin-right: 10px;
+}
+
+/* ----------------FOOTER----------------------- */
+footer {
+    position: relative;
+    bottom:0;left:0;right:0;height:30px;
+    height: 60px;
+    background-color: var(--brown);
+    color: var(--white);
+    text-align: center;
 }

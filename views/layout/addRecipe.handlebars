@@ -17,98 +17,34 @@
 <body>
 
     <header>Cooking With Coding</header>
+        <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">HOME</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link" aria-current="page" href="#">SEARCH RECIPIES</a>
+                <a class="nav-link" href="#">ADD RECIPE</a>
+                <a class="nav-link" href="#">VIEW ACCOUNT</a>
+                <a class="nav-link logout" href="#">LOGOUT</a>
+            </div>
+        </div>
+        </div>
+    </nav>
 
     {{!-- CLASS FORM CONTAINER HOLD ENTIRE FORM  --}}
-    <div class="form-container">
+    <div class="form-container col-10 col-sm-10 col-md-9 col-lg-8 col-xl-8">
 
         <h2 class="mb-5 justify-content-center align-items-center">Add a Recipe</h2>
-{{!-- 
-        -------------------RECIPE TITLE, SELECT COURSE, INGREDIENTS------------------
-        <div class="input-group mb-3">
-            <span class="input-label input-group-text">Recipe Title:</span>
-                <textarea class="form-control" aria-label="With textarea" style="height: 40px;">{{name}}</textarea>
-        </div>
-
-        <div class="input-group mb-3">
-            <label class="input-label input-group-text" for="inputGroupSelect01">Select Course:</label>
-            <select class="form-select" id="inputGroupSelect01">
-                <option selected>Choose...</option>
-                <option value="1">Appetizer</option>
-                <option value="2">Breakfast and Brunch</option>
-                <option value="3">Lunch</option>
-                <option value="4">Side Dish</option>
-                <option value="5">Dinner</option>
-                <option value="6">Dessert</option>
-            </select>
-        </div>
-
-        <div class="input-group mb-3">
-            <span class="input-label input-group-text">Ingredients:</span>
-            <textarea class="form-control" aria-label="With textarea" style="height: 86px;">{{ingredients}}</textarea>
-        </div>
-
-        {{!-- ---------------------------INSTRUCTIONS----------------------  --}}
-        <div class="input-group mb-3">
-            <span class="input-label input-group-text">Instructions:</span>
-            <textarea class="form-control" aria-label="With textarea" style="height: 86px;">{{instructions}}</textarea>
-        </div>
-
-        {{!-- -------------CONTAINER FOR COOK TIME & TO ADD PHOTO----------------  --}}
-        <div class="cook-serve row mb-3">
-            <div class="input-group mb-3 col-6">
-                <span class="input-label input-group-text">Cook Time:</span>
-            <textarea class="form-control" aria-label="With textarea" style="height: 40px;">{{total_time}}</textarea>
-            </div>
-            <div class="input-group mb-3 col-6">
-                <label class="input-label input-group-text" for="inputGroupFile01">Add Photo</label>
-                <input type="file" class="form-control" id="inputGroupFile01" accept="image/*">
-            </div>
-        </div>
-
-        {{!-- ------------------CHECKS FOR DIET OPTIONS----------------- --}}
-        <div class="check-button-container row">
-            <div class="checks-container col">
-
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
-                        Vegan
-                    </label>
-                </div>
-
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
-                        Keto
-                    </label>
-                </div>
-
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
-                        Dairy Free
-                    </label>
-                </div>
-
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
-                        Contains Nuts
-                    </label>
-                </div>
-
-            </div>
-
-            <span class="col-2"></span>
-            <span class="col-2"></span>
-            <button class="btn btn-secondary align-self-end col-3 add-recipe-btn" type="submit">Add Recipe</button>
-
-        </div> --}}
+        
+            {{{recipeForm}}}
 
 
     </div>
 
 
 </body>
-
+<footer>Brought to you by four people</footer>
 </html>

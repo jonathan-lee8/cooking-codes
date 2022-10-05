@@ -17,11 +17,27 @@
 <body>
 
     <header>Cooking With Coding</header>
+        <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">HOME</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link" aria-current="page" href="#">SEARCH RECIPES</a>
+                <a class="nav-link" href="#">ADD RECIPE</a>
+                <a class="nav-link" href="#">VIEW ACCOUNT</a>
+                <a class="nav-link logout" href="#">LOGOUT</a>
+            </div>
+        </div>
+        </div>
+    </nav>
 
     <h2>Find a Recipe</h2>
 
     {{!-- FORMATTING  --}}
-    <div class="main-container row justify-content-evenly">
+    <div class="main-container d-flex flex-md-row flex-column flex-xs-column justify-content-evenly">
 
         {{!-- USER SEARCH INPUT AREA  --}}
         <div class="input-container col-3">
@@ -49,12 +65,12 @@
         </div>
 
         {{!-- LOAD RECIPE SEARCH RESULTS HERE  --}}
-        <section class="recipe-container col-8">
-            {{{allRecipies}}}
+        <section class="recipe-container col-10 col-md-7">
+            {{{allRecipes}}}
         </section>
 
     </div>
 
 </body>
-
+<footer>Brought to you by four people</footer>
 </html>
