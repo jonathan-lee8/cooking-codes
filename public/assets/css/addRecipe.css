@@ -43,7 +43,7 @@ header {
     background-color: var(--navBrown);
 }
 
-/* ---------------FORM--------------------------- */
+/* ---------------RECIPE FORM--------------------------- */
 .form-container {
     max-width: 80%;
     display: flexbox;
