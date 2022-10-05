@@ -12,14 +12,17 @@ router.post('/', async (req, res) => {
 
     req.session.save(() => {
       req.session.loggedIn = true;
-
-      res.status(200).json(dbUserData);
+      res.json(dbUserData);
     });
   } catch (err) {
     console.log(err);
     res.status(500).json(err);
   }
 });
+
+router.get('/login', (req,res) => {
+  res.render('login');
+})
 
 // Login
 router.post('/login', async (req, res) => {

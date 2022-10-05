@@ -1,19 +1,19 @@
-<div class="center">Recipies title</div>
+<div class="center">{{name}}</div>
 <div class="format">
   <section class="box-1">
-    <section>Picture</section>
+    <section>Picture
+      <img src="{{image_url}}" alt="" style="width: 300px; height: 300px;">
+    </section>
     <section class="down">
-      <div>cook time:</div>
-      <div>serves:</div>
-      <div>includes:</div>
+      <div>cook time: {{total_time}}</div>
     </section>
   </section>
   <div class="box-2">
     <div>ingredients:</div>
-    <div>list here</div>
+    <div>{{ingredients}}</div>
   </div>
 </div>
 <div class="bottom-box">
   <div class="instruction">instructions:</div>
-  <div class="instruction">instructions here</div>
+  <div class="instruction">{{instructions}}</div>
 </div>

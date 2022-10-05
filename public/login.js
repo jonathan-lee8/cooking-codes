@@ -1,5 +1,8 @@
+console.log("Attached");
+
 const loginFormHandler = async (event) => {
   event.preventDefault();
+  console.log
 
   // Collect values from the login form
   const user = document.querySelector('#login-user').value.trim();
@@ -15,7 +18,7 @@ const loginFormHandler = async (event) => {
 
     if (response.ok) {
       // If successful, redirect the browser to the profile page
-      document.location.replace('/profile');
+      document.location.replace('/account');
     } else {
       alert(response.statusText);
     }
@@ -24,30 +27,35 @@ const loginFormHandler = async (event) => {
 
 const signupFormHandler = async (event) => {
   event.preventDefault();
+  console.log("Sent submit");
 
   const username = document.querySelector('#username').value.trim();
   const email = document.querySelector('#email').value.trim();
   const password = document.querySelector('#password').value.trim();
-
+  console.log(username, email, password);
   if (username && email && password) {
-    const response = await fetch('/api/users', {
+    fetch('/api/users', {
       method: 'POST',
       body: JSON.stringify({ username, email, password }),
       headers: { 'Content-Type': 'application/json' },
-    });
+    })
+    .then((response) => {
+      console.log(response.body);
+      return response.json();
 
-    if (response.ok) {
-      document.location.replace('/profile');
-    } else {
-      alert(response.statusText);
-    }
+    })
+    .then((data) => {
+      console.log(data);
+      if (data) {
+        document.location.replace(`/account/${data.id}`);
+      } else {
+        alert("ERROR");
+      }
+    })
   }
 };
 
-document
-  .querySelector('.login-box')
-  .addEventListener('submit', loginFormHandler);
 
-document
-  .querySelector('.sign-up')
-  .addEventListener('submit', signupFormHandler);
+document.getElementById('login-box').addEventListener('click', loginFormHandler);
+
+document.getElementById('sign-up').addEventListener('click', signupFormHandler);

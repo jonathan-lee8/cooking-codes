@@ -1,0 +1,38 @@
+
+<h2>Find a Recipe</h2>
+
+{{!-- FORMATTING --}}
+<div class="main-container row justify-content-evenly">
+
+    {{!-- USER SEARCH INPUT AREA --}}
+    <div class="input-container col-3">
+
+        <h3>Find a Chef:</h3>
+        {{!-- SEARCH BAR --}}
+        <div class="container-fluid search-bar">
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-secondary search-btn" type="submit">Search</button>
+            </form>
+        </div>
+
+        <h3>Browse by Course:</h3>
+        <div class="d-grid gap-2 course-btns">
+            <button class="btn btn-secondary my-2 courses" id="appetizer" type="button">Appetizer</button>
+            <button class="btn btn-secondary my-2 courses" id="side-dish" type="button">Side Dish</button>
+            <button class="btn btn-secondary my-2 courses" id="main-course" type="button">Main Course</button>
+            <button class="btn btn-secondary my-2 courses" id="breakfast-brunch" type="button">Breakfast and
+                Brunch</button>
+            <button class="btn btn-secondary my-2 courses" id="lunch" type="button">Lunch</button>
+            <button class="btn btn-secondary my-2 courses" id="dinner" type="button">Dinner</button>
+            <button class="btn btn-secondary my-2 courses" id="dessert" type="button">Dessert</button>
+        </div>
+
+    </div>
+
+    {{!-- LOAD RECIPE SEARCH RESULTS HERE --}}
+    <section class="recipe-container col-8">
+        {{{allRecipies}}}
+    </section>
+
+</div>
