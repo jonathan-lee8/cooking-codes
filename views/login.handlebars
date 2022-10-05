@@ -1,21 +1,35 @@
 <div class="login-page">
+
   <div class="login-box">
     <h2>Login:</h2>
     <div class="center">
-      <textarea placeholder="Username" id="login-user"></textarea>
-      <textarea placeholder="Password" id="login-password"></textarea>
+      <textarea placeholder="Username" class="col-sm-2 col-form-label" id="login-user"></textarea>
+      <div class="mb-3 row">
+        <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+        <div class="col-sm-10">
+          <input type="password" class="form-control" id="login-password">
+        </div>
+      </div>
       <button id="login-box">Submit</button>
     </div>
   </div>
+
   <div class="sign-up">
     <h2>Sign Up:</h2>
     <div class="center">
-      <textarea placeholder="Username" id="username"></textarea>
-      <textarea placeholder="Email" id="email"></textarea>
-      <textarea placeholder="Password" id="password"></textarea>
+      <textarea placeholder="Username" class="col-sm-2 col-form-label" id="username"></textarea>
+      <textarea placeholder="Email" class="col-sm-2 col-form-label" id="email"></textarea>
+            <div class="mb-3 row">
+        <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+        <div class="col-sm-10">
+          <input type="password" class="form-control" id="password">
+        </div>
+      </div>
+      {{!-- <textarea placeholder="Password" id="password"></textarea> --}}
       <button id="sign-up">Submit</button>
     </div>
   </div>
+
 </div>
 
 <script src="/login.js"></script>
