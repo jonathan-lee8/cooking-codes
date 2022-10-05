@@ -42,5 +42,5 @@ document
   .addEventListener('submit', newFormHandler);
 
 document
-  .querySelector('.recipe-list')
+  .querySelector('#data-id')
   .addEventListener('click', delButtonHandler);

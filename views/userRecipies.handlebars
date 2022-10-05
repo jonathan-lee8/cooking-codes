@@ -1,0 +1,13 @@
+<div class="row justify-content-evenly">
+
+    {{#each recipes as |recipe|}}
+    <div class="card text-bg-light m-3 recipes" style="width: 18rem; height: 12rem;">
+        <img src="recipe.image_url" class="card-img" alt="Recipe Photo for: {{name}}">
+        <div class="card-img-overlay">
+            <h5 class="card-title recipe-title">{{name}}</h5>
+            <h5 class="card-title recipe-list" id="data-id">Delete</h5>
+        </div>
+    </div>
+    {{/each}}
+
+</div>
